@@ -5,6 +5,8 @@ namespace SendAmountReduceData
 {
     public static class Serializer
     {
+        // amount of digits after '.' in float for more precision,
+        // ! the same value should be on client and server !
         private const int Mantissa = 2;
 
         public static byte[] SerializeToBytes(PlayerPosition pp)
